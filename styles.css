@@ -1,0 +1,336 @@
+/* Master styles*/
+
+body{
+    font-family: "lato", sans-serif;
+    margin: 0px;
+    background-color:#5b0202ea;
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+   
+}
+
+/* Nav styles*/
+.nav-wrapper{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side{
+    display: flex;
+
+}
+
+.nav-wrapper > .left-side > div{
+   margin-right: 20px;
+    font-size: 0.9m;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color:#8a8a8a ;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover{
+    color: white;
+}
+.brand{
+    color: rgba(245, 245, 245, 0.87);
+    letter-spacing: 3px;
+}
+.active-nav-link{
+border-bottom: 1px solid white ;
+}
+.active-nav-link a{
+    color: white !important;
+}
+
+/*Portfolio styles*/
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    grid-auto-flow: dense;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.img-text-wrapper .subtitle a{
+    text-decoration: none;
+    color: #8b0000;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.content-wrapper{
+    width: 100%;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    width: 100%;
+    color: grey;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+/* About Page*/
+.about-page{
+    width: 100%;
+    background: cover;
+}
+header h1 {
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    opacity: .9;
+    position: absolute;
+    height: 60px;
+    line-height: 50px;
+    background: rgba(126, 126, 126, 0.733);
+    margin-top: 1515px;
+    text-align: center;
+    
+}
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    width: 100%;
+}
+.profile-image-wrapper img{
+    height: 500px;
+    width: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 93px 0 0 65px;
+}
+
+.profile-content-wrapper{
+    margin-top: 60px;  
+    padding: 10px;
+    height: 100vh;
+}
+.profile-content-wrapper p{
+    color: whitesmoke;
+}
+.profile-content-wrapper h1{
+    color: rgba(245, 245, 245, 0.794);
+}
+.button{
+    display: inline-block;
+    background: rgba(0, 0, 255, 0.472);
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.button:hover{
+    background: rgba(50, 50, 187, 0.685);
+}
+.button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: #8b0000;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+} 
+@media screen and (max-width: 991px){
+   .portfolio-img-background{
+       height: 300px;
+       width: 100%;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       object-fit: cover;
+       grid-auto-flow: dense;
+       grid-gap: 5px;
+   }
+   .portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 100%;
+   }
+
+    .about-page{
+        width: 100%;
+        background: cover;  
+    }
+    
+    .subtitle{
+        font-weight: 500px;
+        font-size: 11px;
+       
+       }
+    
+    header h1 {
+        color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #333;
+        opacity: .9;
+        position: absolute;
+        height: 60px;
+        line-height: 50px;
+        background: rgba(126, 126, 126, 0.733);
+        margin-top: 1316px;
+        text-align: center;
+    }
+    .profile-image-wrapper img{
+        width: 100%;
+        margin-top: 120px;
+    }
+    .profile-content-wrapper{
+        margin-top: 120px;  
+        padding: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .content-wrapper .two-column-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .profile-content-wrapper {
+        margin-top: 10px;
+        padding: 30px;
+    }
+
+    .profile-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .profile-content-wrapper {
+        flex: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .portfolio-img-background{
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        grid-auto-flow: dense;
+        grid-gap: 5px;
+    }
+    .portfolio-items-wrapper{
+     display: grid;
+     grid-template-columns: 1fr ;
+     grid-gap: 5px;
+     width: 100% 100%;
+    }
+    .subtitle{
+        font-weight: 500px;
+        font-size: 17px;
+       }
+     .about-page{
+         width: 100%;
+         background: cover;  
+     }
+     
+     .profile-image-wrapper img{
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .button{
+        display: inline-block;
+        background: rgba(0, 0, 255, 0.472);
+        color: whitesmoke;
+        padding: 4px 15px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+    }
+
+     header h1 {
+         color: white;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background: #333;
+         opacity: .9;
+         position: absolute;
+         height: 60px;
+         line-height: 50px;
+         background: rgba(126, 126, 126, 0.733);
+         margin-top: 3755px;
+         text-align: center;
+     }
+ }
